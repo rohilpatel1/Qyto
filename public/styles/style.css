@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Yusei+Magic&family=Montserrat&display=swap');
+
+body {
+	font-family: Open Sans;
+	margin: 0;
+	padding: 0;
+}
+
+#title { 
+	display: block;
+	font-size: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#semi-title {
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p {
+	display: block;
+}
+
+#home-box {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.material-icons {
+  display: inline-block !important;
+  font-size: 28px !important;
+  position: relative;
+  margin-right: 4px;
+  vertical-align: middle !important;
+  color: rgb(122, 122, 122);
+}
+
+.input-entity {
+	/* Removes the IOS Default Looks */
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6px;
+	font-size: 14px;
+	padding: 6px;
+	outline: none;
+	border-radius: 6px;
+	border: 1px solid rgb(211, 206, 206);
+	font-family: montserrat;
+  width: calc(100% - 60px);
+	border-style: solid;
+  transition: 0.2s;
+}
+
+.input-entity:hover {
+  border: 1px solid rgb(182, 177, 177);
+  padding: 6.2px;
+}
+
+#create-account {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: rgb(0, 162, 255);
+	margin-top: 12px;
+  transition: 0.3s;
+}
+
+#login, #create {
+	font-size: 14px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6px 18px;
+	margin-top: 10px;
+	border-radius: 6px;
+	background: rgb(0, 102, 255);
+	color: white;
+	font-family: montserrat;
+	border: none;
+  transition: 0.2s;
+}
+
+#login:hover {
+  padding: 6px 20px;
+}
+
+#create-account:hover {
+  font-size: 16.8px;
+}
+
+.error {
+	color: rgb(255, 20, 20);
+	font-family: yusei magic;
+	font-size: 14px;
+}
+
+.home-container {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.flex-4 {
+	flex: 4;
+}
+
+.side-profile {
+	background: red;
+	height: 100vh;
+}
+
+.home-feed {
+	background: green;
+	height: 100vh;
+}

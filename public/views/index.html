@@ -1,1 +1,30 @@
-diidien
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+  <%- jsLibs %>
+  <%- cssLibs %>
+	<title>Qyto | Sign In</title>
+</head>
+<body>
+	<div class = "container">
+		<div id = "home-box">
+			<span id = "title">Qyto</span>
+			<p>Dreaming big. Making big. Being big.</p>
+      <div>
+        <i class = "material-icons">mail_outline</i>
+        <input class = "input-entity" id = "email" type = "text" placeholder = "Email"/><br/>
+      </div>
+      <div>
+        <i class = "material-icons">lock_outline</i>
+        <input class = "input-entity" id = "password" type = "password" placeholder = "Password">
+      </div>
+			<button id = "login">Login</button>
+			<a id = "create-account" href = "/create">Create Account</a>
+		</div>
+	</div>
+	<script src = "scripts/signin.js"></script>
+</body>
+</html>
