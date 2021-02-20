@@ -32,12 +32,13 @@ p {
 }
 
 .material-icons {
+	font-weight: 100;
   display: inline-block !important;
-  font-size: 28px !important;
+  font-size: 26px !important;
   position: relative;
   margin-right: 4px;
   vertical-align: middle !important;
-  color: rgb(122, 122, 122);
+  color: rgb(211, 206, 206);
 }
 
 .input-entity {

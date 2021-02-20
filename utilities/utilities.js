@@ -18,4 +18,13 @@ const RenderFile = (res, file, data) => {
 	res.render(`${dir}${file}`, fullEjsData);
 };
 
-module.exports = { RenderFile };
+class Errors {
+	unexpectedError() {
+		return "An unexpected error occured. Try again later"
+	}
+	missingCredentials() {
+		return "At least one input field is incomplete"
+	}
+}
+
+module.exports = { RenderFile, Errors };
