@@ -4,6 +4,8 @@ const ejs = require('ejs');
 const app = express();
 const http = require('http');
 
+require('./utilities/firebase')
+
 const server = http.createServer(app);
 const io = require('socket.io')(server);
 

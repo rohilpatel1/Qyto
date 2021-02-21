@@ -125,3 +125,7 @@ p {
 	background: green;
 	height: 100vh;
 }
+
+.full-width {
+	width: 100% !important;
+}

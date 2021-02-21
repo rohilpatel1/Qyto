@@ -10,14 +10,16 @@ const Routes = io => {
 		socket.on('loginCredentials', data => {
 			if (!data) socket.emit('loginError', Errs.unexpectedError())
 			
-			if (!data.email || !data.password) {
-				socket.emit('loginError', Errs.missingCredentials());
-			}
+			if (!data.email || !data.password) socket.emit('loginError', Errs.missingCredentials());
 		});
 	});
 	
 	router.get("/", (_, res) => {
 		RenderFile(res, "index");
+	});
+	
+	router.get('/create', (_, res) => {
+		RenderFile(res, 'signup');
 	});
 	
 	return router;

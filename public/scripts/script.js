@@ -15,4 +15,4 @@ login.addEventListener('click', _ => {
 
 socket.on('loginError', error => {
 	alert(error);
-})
+});
