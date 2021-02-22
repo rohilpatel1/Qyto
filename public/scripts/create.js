@@ -8,12 +8,15 @@ function getValue(id) {
 
 create.addEventListener('click', () => {
 	socket.emit('createAccountCredentials', {
-		username: getValue('username'),
 		email: getValue('email'),
 		firstName: getValue('fname'),
 		lastName: getValue('lname'),
+		username: getValue('username'),
 		password: getValue('password'),
 		confirmPassword: getValue('confirmPassword')
 	});
 });
 
+socket.on('signUpError', error => {
+	alert(error);
+});
